@@ -46,4 +46,8 @@ npm run dev
 
 - Update projects in `app/page.tsx`
 - Modify colors in `tailwind.config.js`
-- Add new sections by extending the main page component 
+- Add new sections by extending the main page component
+
+## Deployment
+
+Ready for deployment on Vercel with automatic builds from GitHub. 
