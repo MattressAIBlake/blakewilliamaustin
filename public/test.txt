@@ -1,0 +1,1 @@
+Test file to check if static assets are loading properly. 
