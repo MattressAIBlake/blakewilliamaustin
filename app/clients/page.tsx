@@ -37,34 +37,62 @@ export default function Clients() {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-20 flex flex-col items-center justify-center px-6 sm:px-12 lg:px-24 max-w-4xl mx-auto text-center">
+        <div className="relative z-20 flex flex-col items-center justify-center px-6 sm:px-12 lg:px-24 max-w-6xl mx-auto">
           
+          {/* CLI Terminal Container */}
           <motion.div
-            className="bg-gray-900 rounded-xl shadow-2xl border border-gray-700 overflow-hidden p-8"
+            className="bg-gray-900 rounded-xl shadow-2xl max-w-5xl mx-auto border border-gray-700 overflow-hidden"
             initial={{ opacity: 0, scale: 0.95, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <motion.a
-              href="https://ewheeldealai.replit.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl md:text-3xl font-mono text-cyan-400 hover:text-cyan-300 underline transition-colors duration-300 block mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-            >
-              ewheeldealai.replit.app
-            </motion.a>
+            {/* Terminal Header */}
+            <div className="bg-gray-800 px-4 py-3 flex items-center gap-2 border-b border-gray-700">
+              <div className="flex gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="text-gray-400 text-sm font-mono ml-4">blake@terminal ~ cat client-work.md</div>
+            </div>
             
-            <motion.p
-              className="text-lg md:text-xl font-mono text-gray-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-            >
-              Yes its a simple replit app. And also Yes its pretty cool and helpful
-            </motion.p>
+            {/* Terminal Content */}
+            <div className="p-8 text-left">
+              <motion.div
+                className="font-mono text-sm leading-relaxed space-y-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 1 }}
+              >
+                <div className="text-green-400"># Client Work</div>
+                <div className="text-gray-300">
+                  Custom solutions and applications built for clients who need to solve real problems.
+                </div>
+                
+                <div className="text-blue-400 mt-6">## Featured Project</div>
+                <div className="text-gray-300">
+                  **E-Wheel Deal AI** - <a href="https://ewheeldealai.replit.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">ewheeldealai.replit.app</a>
+                </div>
+                <div className="text-gray-300">
+                  Yes its a simple replit app. And also Yes its pretty cool and helpful
+                </div>
+                
+                <div className="text-blue-400 mt-6">## Services</div>
+                <div className="text-gray-300">
+                  • Full-stack web applications<br/>
+                  • Mobile app development<br/>
+                  • AI/ML integration<br/>
+                  • Custom automation tools<br/>
+                  • Data analysis & visualization
+                </div>
+
+                <div className="text-blue-400 mt-6">## Approach</div>
+                <div className="text-gray-300">
+                  Simple, effective solutions that actually work.<br/>
+                  No over-engineering, no BS - just results.
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
 
         </div>

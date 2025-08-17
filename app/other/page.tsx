@@ -37,36 +37,63 @@ export default function Other() {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-20 flex flex-col items-center justify-center px-6 sm:px-12 lg:px-24 max-w-4xl mx-auto text-center">
+        <div className="relative z-20 flex flex-col items-center justify-center px-6 sm:px-12 lg:px-24 max-w-6xl mx-auto">
           
+          {/* CLI Terminal Container */}
           <motion.div
-            className="bg-gray-900 rounded-xl shadow-2xl border border-gray-700 overflow-hidden p-8"
+            className="bg-gray-900 rounded-xl shadow-2xl max-w-5xl mx-auto border border-gray-700 overflow-hidden"
             initial={{ opacity: 0, scale: 0.95, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <motion.a
-              href="https://myappstarter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl md:text-3xl font-mono text-cyan-400 hover:text-cyan-300 underline transition-colors duration-300 block mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-            >
-              myappstarter.com
-            </motion.a>
-          </motion.div>
+            {/* Terminal Header */}
+            <div className="bg-gray-800 px-4 py-3 flex items-center gap-2 border-b border-gray-700">
+              <div className="flex gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="text-gray-400 text-sm font-mono ml-4">blake@terminal ~ cat other-projects.md</div>
+            </div>
+            
+            {/* Terminal Content */}
+            <div className="p-8 text-left">
+              <motion.div
+                className="font-mono text-sm leading-relaxed space-y-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 1 }}
+              >
+                <div className="text-green-400"># Other Projects</div>
+                <div className="text-gray-300">
+                  Experimental and fun projects that explore new ideas and push boundaries.
+                </div>
+                
+                <div className="text-blue-400 mt-6">## Featured Projects</div>
+                
+                <div className="text-yellow-400 mt-4">### Clinical Trials AI</div>
+                <div className="text-gray-300">
+                  **URL**: <a href="https://clinicaltrials.replit.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">clinicaltrials.replit.app</a>
+                </div>
+                <div className="text-gray-300">
+                  **Description**: AI for searching clinical trials
+                </div>
+                
+                <div className="text-yellow-400 mt-4">### MyAppStarter</div>
+                <div className="text-gray-300">
+                  **URL**: <a href="https://myappstarter.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">myappstarter.com</a>
+                </div>
+                <div className="text-gray-300">
+                  **Description**: Solving the idea maze
+                </div>
 
-          {/* Below Text */}
-          <motion.p
-            className="text-white/80 text-lg font-mono mt-8 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-          >
-            Where we are going there are no codes
-          </motion.p>
+                <div className="text-blue-400 mt-6">## Philosophy</div>
+                <div className="text-gray-300">
+                  Where we are going there are no codes
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
 
         </div>
       </section>
