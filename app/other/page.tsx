@@ -86,6 +86,14 @@ export default function Other() {
                 <div className="text-gray-300">
                   **Description**: Solving the idea maze
                 </div>
+                
+                <div className="text-yellow-400 mt-4">### Smarty-Pants</div>
+                <div className="text-gray-300">
+                  **URL**: <a href="https://Smarty-Pants.replit.app" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Smarty-Pants.replit.app</a>
+                </div>
+                <div className="text-gray-300">
+                  **Description**: AI-powered learning assistant
+                </div>
 
                 <div className="text-blue-400 mt-6">## Philosophy</div>
                 <div className="text-gray-300">

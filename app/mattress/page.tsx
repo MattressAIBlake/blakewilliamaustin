@@ -73,6 +73,9 @@ export default function Mattress() {
                 <div className="text-gray-300">
                   - <a href="https://mattressai.co" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline transition-colors">mattressai.co</a> <span className="text-gray-400 italic">(B2B Mattress Sales Assistant +CRM for Mattress Retailers)</span>
                 </div>
+                <div className="text-gray-300">
+                  - <a href="https://apps.shopify.com/mattressai" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline transition-colors">apps.shopify.com/mattressai</a> <span className="text-gray-400 italic">(Shopify App Store)</span>
+                </div>
               </div>
             </div>
           </motion.div>
