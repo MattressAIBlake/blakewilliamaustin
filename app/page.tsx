@@ -75,22 +75,21 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative">
-      {/* Matrix Background Layer - 50% opacity with black border */}
-      <div className="fixed inset-0 z-0 border-4 border-black">
-        <Image
-          src="/matrix-bg.png"
-          alt="Matrix digital rain background"
-          fill
-          className="object-cover opacity-50"
-          priority
-          sizes="100vw"
-        />
-      </div>
-      
       {/* Desktop Layout - Perfectly Responsive at Any Aspect Ratio */}
-      <section className="hidden lg:block relative w-full min-h-screen bg-black/80 overflow-hidden z-10">
+      <section className="hidden lg:block relative w-full min-h-screen overflow-hidden">
+        {/* Matrix Background Layer - Shows in the black border area around hero image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/matrix-bg.png"
+            alt="Matrix digital rain background"
+            fill
+            className="object-cover opacity-50"
+            priority
+            sizes="100vw"
+          />
+        </div>
         {/* Full viewport container */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center z-10">
           {/* Aspect-ratio-locked container that scales to fit */}
           <div className="relative w-full h-full max-w-[177.78vh] max-h-[56.25vw]">
             {/* Background Image fills this exact container */}
@@ -330,7 +329,7 @@ export default function Home() {
       </section>
 
       {/* Tablet Layout - Simplified Grid */}
-      <section className="hidden md:block lg:hidden relative min-h-screen bg-gradient-to-br from-slate-900/80 via-gray-900/80 to-black/80 z-10">
+      <section className="hidden md:block lg:hidden relative min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black">
         <div className="relative h-screen flex flex-col">
           {/* Hero Section */}
           <div className="relative h-1/2 overflow-hidden">
@@ -498,7 +497,7 @@ export default function Home() {
       </section>
 
       {/* Mobile Layout - Completely Redesigned */}
-      <section className="md:hidden relative min-h-screen bg-black/80 z-10">
+      <section className="md:hidden relative min-h-screen bg-black">
         {/* Mobile Hero - Compact */}
         <div className="relative h-[40vh] overflow-hidden">
           <Image
