@@ -91,7 +91,7 @@ export default function Home() {
         {/* Full viewport container */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           {/* Aspect-ratio-locked container that scales to fit */}
-          <div className="relative w-full h-full max-w-[177.78vh] max-h-[56.25vw]">
+          <div className="relative w-full h-full max-w-[190vh] max-h-[63vw]">
             {/* Background Image fills this exact container */}
             <div className="absolute inset-0">
               <Image
