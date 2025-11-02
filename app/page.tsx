@@ -74,9 +74,9 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen relative">
+    <main className="min-h-screen relative bg-black">
       {/* Desktop Layout - Perfectly Responsive at Any Aspect Ratio */}
-      <section className="hidden lg:block relative w-full min-h-screen overflow-hidden">
+      <section className="hidden lg:block relative w-full min-h-screen bg-black overflow-hidden">
         {/* Matrix Background Layer - Shows in the black border area around hero image */}
         <div className="absolute inset-0 z-0">
           <Image
